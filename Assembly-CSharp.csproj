@@ -72,6 +72,11 @@
     <Compile Include="Assets\_Data\NTCMonoBehaviour.cs" />
     <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\Tools.cs" />
     <Compile Include="Assets\_Data\Bullet\BulletSpawner.cs" />
+    <Compile Include="Assets\_Data\Scripts\ParentFly.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkSpawner.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkFly.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkCtrl.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkRandom.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
