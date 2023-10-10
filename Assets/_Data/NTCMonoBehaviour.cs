@@ -15,6 +15,11 @@ public class NTCMonoBehaviour : MonoBehaviour
         this.LoadComponents();
     }
 
+    protected virtual void OnEnable()
+    {
+
+    }
+
     protected virtual void LoadComponents()
     {
         // For override

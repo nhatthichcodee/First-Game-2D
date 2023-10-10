@@ -6,11 +6,14 @@ public class JunkCtrl : NTCMonoBehaviour
 {
     [SerializeField] private JunkSpawner junkSpawner;
     public JunkSpawner JunkSpawner => junkSpawner;
+    [SerializeField] private JunkSpawnPoints junkSpawnPoints;
+    public SpawnPoints JunkSpawnPoints => junkSpawnPoints;
 
     protected override void LoadComponents()
     {
         base.LoadComponents();
         this.LoadJunkSpawner();
+        this.LoadSpawnPoints();
     }
 
     protected virtual void LoadJunkSpawner()
@@ -20,5 +23,15 @@ public class JunkCtrl : NTCMonoBehaviour
             return;
         }
         this.junkSpawner = GetComponent<JunkSpawner>();
+    }
+
+    protected virtual void LoadSpawnPoints()
+    {
+        if (this.JunkSpawnPoints != null)
+        {
+            return;
+        }
+
+        this.junkSpawnPoints = Transform.FindObjectOfType<JunkSpawnPoints>();
     }
 }

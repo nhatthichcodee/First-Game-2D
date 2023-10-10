@@ -29,7 +29,8 @@ public class JunkRandom : NTCMonoBehaviour
 
     protected virtual void JunkSpawning()
     {
-        Transform obj = this.junkCtrl.JunkSpawner.Spawn(JunkSpawner.meteoriteOne, transform.position, transform.rotation);
+        Transform randPoint = this.junkCtrl.JunkSpawnPoints.GetRandom();
+        Transform obj = this.junkCtrl.JunkSpawner.Spawn(JunkSpawner.meteoriteOne, randPoint.position, randPoint.rotation);
         obj.gameObject.SetActive(true);
         Invoke(nameof(this.JunkSpawning),1f);
     }

@@ -60,23 +60,27 @@
     <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\SceneController.cs" />
     <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\BaseFrameController.cs" />
     <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\FrameController.cs" />
+    <Compile Include="Assets\_Data\Scripts\ParentFly.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkRandom.cs" />
     <Compile Include="Assets\_Data\Despawn\DespawnByDistance.cs" />
     <Compile Include="Assets\_Data\Despawn\Despawn.cs" />
     <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\ships\ExplosionController.cs" />
     <Compile Include="Assets\_Data\Spawner.cs" />
+    <Compile Include="Assets\_Data\Bullet\BulletSpawner.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkSpawner.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkFly.cs" />
     <Compile Include="Assets\_Data\Ship\ShipShooting.cs" />
     <Compile Include="Assets\_Data\Bullet\BulletFly.cs" />
     <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\ships\BaseBulletStarter.cs" />
     <Compile Include="Assets\_Data\Ship\ShipMovement.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkCtrl.cs" />
     <Compile Include="Assets\_Data\InputManager.cs" />
     <Compile Include="Assets\_Data\NTCMonoBehaviour.cs" />
     <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\Tools.cs" />
-    <Compile Include="Assets\_Data\Bullet\BulletSpawner.cs" />
-    <Compile Include="Assets\_Data\Scripts\ParentFly.cs" />
-    <Compile Include="Assets\_Data\Junk\JunkSpawner.cs" />
-    <Compile Include="Assets\_Data\Junk\JunkFly.cs" />
-    <Compile Include="Assets\_Data\Junk\JunkCtrl.cs" />
-    <Compile Include="Assets\_Data\Junk\JunkRandom.cs" />
+    <Compile Include="Assets\_Data\Scripts\SpawnPoints.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkSpawnPoints.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkDespawn.cs" />
+    <Compile Include="Assets\_Data\Ship\GameCtrl.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
