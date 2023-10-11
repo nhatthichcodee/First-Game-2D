@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class JunkRandom : NTCMonoBehaviour
 {
-    [SerializeField] private JunkCtrl junkCtrl;
-    public JunkCtrl JunkCtrl => junkCtrl;
+    [SerializeField] private JunkSpawnerCtrl junkSpawnerCtrl;
+    public JunkSpawnerCtrl JunkSpawnerCtrl => junkSpawnerCtrl;
 
     protected override void LoadComponents()
     {
@@ -15,11 +15,11 @@ public class JunkRandom : NTCMonoBehaviour
 
     protected virtual void LoadJunkCtrl()
     {
-        if (this.junkCtrl != null)
+        if (this.junkSpawnerCtrl != null)
         {
             return;
         }
-        this.junkCtrl = GetComponent<JunkCtrl>();
+        this.junkSpawnerCtrl = GetComponent<JunkSpawnerCtrl>();
     }
 
     protected virtual void Start()
@@ -29,8 +29,8 @@ public class JunkRandom : NTCMonoBehaviour
 
     protected virtual void JunkSpawning()
     {
-        Transform randPoint = this.junkCtrl.JunkSpawnPoints.GetRandom();
-        Transform obj = this.junkCtrl.JunkSpawner.Spawn(JunkSpawner.meteoriteOne, randPoint.position, randPoint.rotation);
+        Transform randPoint = this.junkSpawnerCtrl.JunkSpawnPoints.GetRandom();
+        Transform obj = this.junkSpawnerCtrl.JunkSpawner.Spawn(JunkSpawner.meteoriteOne, randPoint.position, randPoint.rotation);
         obj.gameObject.SetActive(true);
         Invoke(nameof(this.JunkSpawning),1f);
     }

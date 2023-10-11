@@ -4,34 +4,22 @@ using UnityEngine;
 
 public class JunkCtrl : NTCMonoBehaviour
 {
-    [SerializeField] private JunkSpawner junkSpawner;
-    public JunkSpawner JunkSpawner => junkSpawner;
-    [SerializeField] private JunkSpawnPoints junkSpawnPoints;
-    public SpawnPoints JunkSpawnPoints => junkSpawnPoints;
+    [SerializeField] protected Transform model;
+    public Transform Model => model;
 
     protected override void LoadComponents()
     {
         base.LoadComponents();
-        this.LoadJunkSpawner();
-        this.LoadSpawnPoints();
+        this.LoadModel();
     }
 
-    protected virtual void LoadJunkSpawner()
+    protected virtual void LoadModel()
     {
-        if (this.JunkSpawner != null)
-        {
-            return;
-        }
-        this.junkSpawner = GetComponent<JunkSpawner>();
-    }
-
-    protected virtual void LoadSpawnPoints()
-    {
-        if (this.JunkSpawnPoints != null)
+        if (this.model != null)
         {
             return;
         }
 
-        this.junkSpawnPoints = Transform.FindObjectOfType<JunkSpawnPoints>();
+        this.model = transform.Find("Model");
     }
 }

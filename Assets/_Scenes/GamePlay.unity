@@ -133,8 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 31579367}
   - component: {fileID: 31579366}
-  - component: {fileID: 31579365}
   - component: {fileID: 31579364}
+  - component: {fileID: 31579368}
   m_Layer: 0
   m_Name: JunkSpawner
   m_TagString: Untagged
@@ -154,21 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5618b224b00c82d4799af7990ea71c1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  junkCtrl: {fileID: 31579365}
---- !u!114 &31579365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 31579363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bb1d485109de6e4da2eb7689b5a06ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  junkSpawner: {fileID: 31579366}
-  junkSpawnPoints: {fileID: 726951379}
+  junkSpawnerCtrl: {fileID: 0}
 --- !u!114 &31579366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,6 +188,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &31579368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31579363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb1d485109de6e4da2eb7689b5a06ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  junkSpawner: {fileID: 31579366}
+  junkSpawnPoints: {fileID: 726951379}
 --- !u!1 &62548714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,6 +1033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1546261353}
+  - component: {fileID: 1546261354}
   m_Layer: 0
   m_Name: Meteorite_1
   m_TagString: Untagged
@@ -1058,6 +1059,18 @@ Transform:
   m_Father: {fileID: 1287746363}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1546261354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546261352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7afb233ca9a1140a93331f6f5028e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1649940052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,7 +1115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26cd3078f53ea934eb4e66ff562dc3c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: []
 --- !u!1 &1990073751
 GameObject:
   m_ObjectHideFlags: 0
