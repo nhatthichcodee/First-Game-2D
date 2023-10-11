@@ -84,6 +84,14 @@
     <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\Tools.cs" />
     <Compile Include="Assets\_Data\Junk\JunkAbstract.cs" />
     <Compile Include="Assets\_Data\Junk\JunkRotate.cs" />
+    <Compile Include="Assets\_Data\Scripts\FollowTarget.cs" />
+    <Compile Include="Assets\_Data\Scripts\DameReceiver.cs" />
+    <Compile Include="Assets\_Data\Scripts\DameSender.cs" />
+    <Compile Include="Assets\_Data\Bullet\BulletCtrl.cs" />
+    <Compile Include="Assets\_Data\Bullet\BulletAbstract.cs" />
+    <Compile Include="Assets\_Data\Bullet\BulletImpart.cs" />
+    <Compile Include="Assets\_Data\Bullet\BulletDamageSender.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkDameReceiver.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
