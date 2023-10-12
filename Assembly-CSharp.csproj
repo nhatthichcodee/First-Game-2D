@@ -56,42 +56,43 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Data\Scripts\FollowTarget.cs" />
     <Compile Include="Assets\_Data\Bullet\BulletDespawn.cs" />
     <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\SceneController.cs" />
     <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\BaseFrameController.cs" />
     <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\FrameController.cs" />
+    <Compile Include="Assets\_Data\Bullet\BulletImpart.cs" />
     <Compile Include="Assets\_Data\Scripts\ParentFly.cs" />
-    <Compile Include="Assets\_Data\Junk\JunkRandom.cs" />
+    <Compile Include="Assets\_Data\Scripts\DameReceiver.cs" />
+    <Compile Include="Assets\_Data\Bullet\BulletDamageSender.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkSpawner\JunkSpawnerRandom.cs" />
     <Compile Include="Assets\_Data\Despawn\DespawnByDistance.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkDameReceiver.cs" />
     <Compile Include="Assets\_Data\Despawn\Despawn.cs" />
     <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\ships\ExplosionController.cs" />
     <Compile Include="Assets\_Data\Spawner.cs" />
+    <Compile Include="Assets\_Data\Scripts\DameSender.cs" />
     <Compile Include="Assets\_Data\Junk\JunkCtrl.cs" />
     <Compile Include="Assets\_Data\Bullet\BulletSpawner.cs" />
-    <Compile Include="Assets\_Data\Junk\JunkSpawner.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkSpawner\JunkSpawner.cs" />
     <Compile Include="Assets\_Data\Junk\JunkDespawn.cs" />
     <Compile Include="Assets\_Data\Junk\JunkFly.cs" />
     <Compile Include="Assets\_Data\Ship\ShipShooting.cs" />
+    <Compile Include="Assets\_Data\Bullet\BulletCtrl.cs" />
     <Compile Include="Assets\_Data\Bullet\BulletFly.cs" />
     <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\ships\BaseBulletStarter.cs" />
     <Compile Include="Assets\_Data\Ship\GameCtrl.cs" />
     <Compile Include="Assets\_Data\Scripts\SpawnPoints.cs" />
     <Compile Include="Assets\_Data\Ship\ShipMovement.cs" />
-    <Compile Include="Assets\_Data\Junk\JunkSpawnerCtrl.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkSpawner\JunkSpawnerCtrl.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkRotate.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkAbstract.cs" />
     <Compile Include="Assets\_Data\InputManager.cs" />
     <Compile Include="Assets\_Data\NTCMonoBehaviour.cs" />
-    <Compile Include="Assets\_Data\Junk\JunkSpawnPoints.cs" />
-    <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\Tools.cs" />
-    <Compile Include="Assets\_Data\Junk\JunkAbstract.cs" />
-    <Compile Include="Assets\_Data\Junk\JunkRotate.cs" />
-    <Compile Include="Assets\_Data\Scripts\FollowTarget.cs" />
-    <Compile Include="Assets\_Data\Scripts\DameReceiver.cs" />
-    <Compile Include="Assets\_Data\Scripts\DameSender.cs" />
-    <Compile Include="Assets\_Data\Bullet\BulletCtrl.cs" />
     <Compile Include="Assets\_Data\Bullet\BulletAbstract.cs" />
-    <Compile Include="Assets\_Data\Bullet\BulletImpart.cs" />
-    <Compile Include="Assets\_Data\Bullet\BulletDamageSender.cs" />
-    <Compile Include="Assets\_Data\Junk\JunkDameReceiver.cs" />
+    <Compile Include="Assets\_Data\Junk\JunkSpawner\JunkSpawnPoints.cs" />
+    <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\Tools.cs" />
+    <Compile Include="Assets\_Data\Resources\Junk\JunkSO.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

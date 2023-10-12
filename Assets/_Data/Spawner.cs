@@ -8,6 +8,9 @@ public class Spawner : NTCMonoBehaviour
     [SerializeField] protected List<Transform> prefabs;
     [SerializeField] protected List<Transform> poolObjs;
     [SerializeField] protected Transform holder;
+    [SerializeField] protected int spawnedCount = 0;
+
+    public int SpawnedCount => spawnedCount;
     protected override void LoadComponents()
     {
         base.LoadComponents();
@@ -59,6 +62,16 @@ public class Spawner : NTCMonoBehaviour
         Transform newPrefab = this.GetObjetFromPool(prefab);
         newPrefab.SetPositionAndRotation(spawnPos,rotation);
         newPrefab.parent = this.holder;
+        this.spawnedCount++;
+        return Spawn(prefab, spawnPos, rotation);
+    }
+
+    public virtual Transform Spawn(Transform prefab, Vector3 spawnPos, Quaternion rotation)
+    {
+        Transform newPrefab = this.GetObjetFromPool(prefab);
+        newPrefab.SetPositionAndRotation(spawnPos, rotation);
+        newPrefab.parent = this.holder;
+        this.spawnedCount++;
         return newPrefab;
     }
 
@@ -94,5 +107,12 @@ public class Spawner : NTCMonoBehaviour
     {
         this.poolObjs.Add(obj);
         obj.gameObject.SetActive(false);
+        this.spawnedCount--;
+    }
+
+    public virtual Transform RandomPrefab()
+    {
+        int rand = Random.Range(0, this.prefabs.Count);
+        return this.prefabs[rand];
     }
 }

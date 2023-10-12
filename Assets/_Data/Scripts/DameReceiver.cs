@@ -4,11 +4,25 @@ using UnityEngine;
 [RequireComponent(typeof(SphereCollider))]
 public class DameReceiver : NTCMonoBehaviour
 {
+    [SerializeField] protected SphereCollider sphereCollider;
     [SerializeField] protected int hp = 1;
     [SerializeField] protected int maxHP = 10;
     [SerializeField] protected bool isDead = false;
 
-    protected virtual void Start()
+    protected override void LoadComponents()
+    {
+        base.LoadComponents();
+        this.LoadCollider();
+    }
+
+    protected virtual void LoadCollider()
+    {
+        if (this.sphereCollider != null) return;
+        this.sphereCollider = GetComponent<SphereCollider>();
+        this.sphereCollider.isTrigger = true;
+        this.sphereCollider.radius = 0.2f;
+    }
+    protected virtual void OnEnable()
     {
         this.Reborn();
     }
@@ -16,6 +30,7 @@ public class DameReceiver : NTCMonoBehaviour
     protected virtual void Reborn()
     {
         this.hp = this.maxHP;
+        this.isDead = false;
     }
 
     public virtual void Add(int add)
